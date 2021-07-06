@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"      
+                     xmlns:ctrl="clr-namespace:WpfApp2.controller"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                 >
+    
+    <ctrl:mycontroller x:Key="ctrl"></ctrl:mycontroller>
+</ResourceDictionary>
