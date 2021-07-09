@@ -9,6 +9,22 @@
       Title="pagina2">
 
     <Grid>
-        <TextBox>pagina 2</TextBox>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="541*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="79*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBox Grid.RowSpan="3" Grid.ColumnSpan="3">pagina 2</TextBox>
+        <Button Margin="21,6,0,24" Grid.Row="2" Grid.Column="1"/>
+        <Button Margin="21,14,0,9" Grid.Column="1" Grid.Row="1" />
+        <TextBox  BorderThickness="5px" Margin="27,14,4,9" Grid.Row="1" />
+        <TextBox  BorderThickness="5px" Margin="27,6,4,24" Grid.Row="2" />
     </Grid>
 </Page>
