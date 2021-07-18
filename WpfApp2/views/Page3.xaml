@@ -8,7 +8,35 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="pagina3">
 
-    <Grid>
-        <TextBox>pagina 3</TextBox>
+    <Grid DataContext="{Binding Source={StaticResource ctrl}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="541*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="260*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="79*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBox Grid.RowSpan="4" Grid.ColumnSpan="3">pagina 3</TextBox>
+        <ListView Grid.Row="1" Grid.ColumnSpan="3" IsSynchronizedWithCurrentItem="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="100"></GridViewColumn>
+                    <GridViewColumn Header="Nome"></GridViewColumn>
+                    <GridViewColumn Header="ediçao" Width="100" ></GridViewColumn>
+                    <GridViewColumn Header="ano" ></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Margin="101,10,373,20" Grid.Row="3" Grid.Column="2" Click="Button_Click"/>
+
+        <TextBox  BorderThickness="5px" Margin="27,6,4,24" Grid.Row="3"   Grid.ColumnSpan="1" Grid.Column="0"/>
+        <TextBox  BorderThickness="5px" Margin="10,6,479,24" Grid.Row="3"  Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox  BorderThickness="5px" Margin="0,14,489,9" Grid.Row="2"   Grid.ColumnSpan="2" Grid.Column="1"/>
     </Grid>
 </Page>

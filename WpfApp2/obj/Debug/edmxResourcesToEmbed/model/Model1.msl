@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="basedadosModelStoreContainer" CdmEntityContainer="basedadosEntities">
+    <EntitySetMapping Name="livros">
+      <EntityTypeMapping TypeName="basedadosModel.livros">
+        <MappingFragment StoreEntitySet="livros">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="ediçao" ColumnName="ediçao" />
+          <ScalarProperty Name="ano" ColumnName="ano" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
